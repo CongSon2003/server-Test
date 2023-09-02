@@ -10,6 +10,10 @@ app.get('/',(req,res,next)=>{
     res.sendFile(linkfile);
 })
 
+app.get('/Home',(req,res)=>{
+    res.json('HOME');
+})
+
 app.listen(process.env.PORT,()=>{
     console.log(`Example app listening at http://localhost:${port}`);
 })
