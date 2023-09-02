@@ -6,7 +6,7 @@ const path = require('path');
 app.use('/Home',express.static(path.join(__dirname,'/public')));
 
 app.get('/',(req,res,next)=>{
-    var linkfile = path.join(__dirname,'/public/home.html');
+    var linkfile = path.join(__dirname,'home.html');
     res.sendFile(linkfile);
 })
 
